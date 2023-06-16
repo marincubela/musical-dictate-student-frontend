@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+.exercise-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    margin: 10px 25px;
+}
+
+.exercise-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px 25px;
+    width: 100%;
+}
+
+.exercise-button>button {
+    width: 100%;
+    border: 1px solid blue;
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}

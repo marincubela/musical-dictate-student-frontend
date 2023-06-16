@@ -1,0 +1,122 @@
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.full-width-container {
+    width: 100%;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+}
+
+.play-button {
+    background-image: url(../images/play.png);
+    background-size: 40px;
+    background-color: white;
+    border: 0px;
+}
+
+.stop-button {
+    background-image: url(../images/stop.png);
+    background-size: 40px;
+    background-color: white;
+    border: 0px;
+}
+
+.pause-button {
+    background-image: url(../images/pause.png);
+    background-size: 40px;
+    background-color: white;
+    border: 0px;
+}
+
+.previous-button {
+    background-image: url(../images/previous.png);
+    background-size: 40px;
+    background-color: white;
+    border: 0px;
+}
+
+.next-button {
+    background-image: url(../images/next.png);
+    background-size: 40px;
+    background-color: white;
+    border: 0px;
+}
+
+.notification-button {
+    background-image: url(../images/notification.png);
+    background-size: 40px;
+    background-color: white;
+    border: 0px;
+}
+
+.logout-button {
+    background-image: url(../images/logout.png);
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+}
+
+.back-button {
+    background-image: url(../images/back.png);
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+}
+
+.inforow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    font-size: large;
+}
+
+.inforow-value {
+    width: 80%;
+    text-align: left;
+}
+
+.inforow-label {
+    width: 20%;
+    text-align: left;
+}
+
+.button {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin: 0 30px;
+    min-width: 180px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,51 @@
+.studentList-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.studentListItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+}
+
+.studentListItem-field {
+    width: 25%;
+    text-align: left;
+}
+
+.studentListItem-withDelete {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.studentListItem-delete-box {
+    width: 40px;
+    height: 40px;
+}
+.studentListItem-delete-button {
+    background-image: url(../images/delete.png);
+    background-size: 40px;
+    background-color: white;
+    border: 0px;
+}
+.studentListItem-add-button {
+    background-image: url(../images/add.png);
+    background-size: 40px;
+    background-color: white;
+    border: 0px;
+}
+
+.studentListHeader {
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}

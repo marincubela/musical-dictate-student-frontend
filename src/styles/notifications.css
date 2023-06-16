@@ -1,0 +1,24 @@
+.notifications-container {
+    box-sizing: border-box;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: large;
+    position: absolute;
+    top: 65px;
+    right: 30px;
+    padding: 5px 10px;
+    overflow: auto;
+}
+
+.notification-list-item {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(67, 106, 190);
+    text-align: left;
+
+    padding: 25px 15px 5px 15px;
+}

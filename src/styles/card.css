@@ -1,0 +1,89 @@
+.card {
+    box-sizing: border-box;
+
+    width: 360px;
+    height: 240px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
+}
+
+/* Menu */
+
+.menucard-image {
+    width: 120px;
+    height: 120px;
+}
+
+.menucard-title {
+    width: 300px;
+    height: 39px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+/* Title */
+
+.titlecard-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+/* Exercise */
+
+.exercisecard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.exercisecard-group {
+    color: #2F9BFF;
+}
+
+.exercisecard-title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.exercisecard-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}

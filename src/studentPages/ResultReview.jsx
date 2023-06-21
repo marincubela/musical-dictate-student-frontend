@@ -26,7 +26,7 @@ export function ResultReview() {
                     controlsPosition: 'top'
                 }
             });
-            await embed.loadMusicXML(base64ToArrayBuffer(res.assignment.exercise.solution.musicXml))
+            await embed.loadMusicXML(res.assignment.exercise.solution.musicXml)
             setEmbed(embed);
 
             const studentContainer = document.getElementById('embed-container-student');
@@ -40,7 +40,7 @@ export function ResultReview() {
                     branding: false,
                 }
             });
-            await studentEmbed.loadMusicXML(base64ToArrayBuffer(res.solution.musicXml))
+            await studentEmbed.loadMusicXML(res.solution.musicXml)
             setStudentEmbed(studentEmbed);
         })()
     }, [])
@@ -53,7 +53,7 @@ export function ResultReview() {
                     <InfoRow label="Pregledano" value={!!solution && solution.result !== null ? "DA" : "NE"}></InfoRow>
                     <InfoRow label="Pregledao" value={!!solution && solution.result !== null && solution.result.teacher !== null ? solution.result.teacher.lastName : "Strojni pregled"}></InfoRow>
                     <InfoRow label="Ocjena" value={!!solution && solution.result !== null ? solution.result.grade.name : ""}></InfoRow>
-                    <InfoRow label="Točnost" value={!!solution && solution.result !== null ? solution.result.percentage : ""}></InfoRow>
+                    <InfoRow label="Točnost" value={!!solution && solution.result !== null ? solution.result.percentage * 100 + "%" : ""}></InfoRow>
                     <InfoRow label="Komentar" value={!!solution && solution.result !== null ? solution.result.comment : ""}></InfoRow>
                 </div>
             </div>

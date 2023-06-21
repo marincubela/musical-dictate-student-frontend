@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Header } from './layout/Header';
-import { Error } from './pages/Error';
 import { StudentMain } from './studentPages/StudentMain';
 import { StudentAssignment } from './studentPages/StudentAssignment';
 import { StudentGroups } from './studentPages/StudentGroups';
@@ -10,6 +9,7 @@ import { StudentGroup } from './studentPages/StudentGroup';
 import { ResultReview } from './studentPages/ResultReview';
 import { ResultReviews } from './studentPages/ResultReviews';
 import { LoginStudent, RegisterStudent } from './studentPages/StudentLogin';
+import { Error } from "./studentPages/Error";
 
 function App() {
   return (

@@ -42,7 +42,7 @@ export function StudentAssignment() {
                     mode: 'edit'
                 }
             });
-            await embed.loadMusicXML(base64ToArrayBuffer(res.exercise.solution.musicXml))
+            await embed.loadMusicXML(res.exercise.solution.musicXml)
             setEmbed(embed);
 
             const studentContainer = document.getElementById('embed-container-student');
@@ -112,14 +112,12 @@ export function StudentAssignment() {
     }
 
     const sendSolution = async () => {
-        const buffer = await studentEmbed.getMusicXML({ compressed: true })
-        const formData = new FormData()
-        formData.append("assignmentId", assignment.id)
-        formData.append("solution", new Blob([buffer], {
-            type: 'application/vnd.recordare.musicxml+xml'
-        }))
+        const musicXml = await studentEmbed.getMusicXML({ compressed: false })
 
-        await StudentSolutionsService.createStudentSolution(formData)
+        await StudentSolutionsService.createStudentSolution({
+            assignmentId: assignment.id,
+            solution: musicXml
+        })
         navigate("/student/groups");
     }
 
